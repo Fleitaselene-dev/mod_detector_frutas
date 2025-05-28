@@ -1,20 +1,19 @@
-## Entrenamiento del modelo
+# Entrenamiento de modelo - Detector de Frutas
 
-Este proyecto utiliza TensorFlow.js para entrenar un modelo de clasificación de frutas. Por defecto, el modelo **no está incluido** en este repositorio para evitar archivos binarios pesados.
+Este proyecto utiliza TensorFlow.js para entrenar un modelo de clasificación de frutas. Se le dara los pasos de jeecucion desde 0 para que entrene y utilice el modelo.
 
-### Como clonar este repositorio
-
+## Requisitos
+- Instalar icrawler
+  
+## Como clonar este repositorio
 1. Clonar el repositorio
 ```bash
-git clone https://github.com/tatymediina/tp-tensorflow-detector-frutas.git
-```
-2. Acceder a la carpeta clonada
-```bash
+git https://github.com/Fleitaselene-dev/mod_detector_frutas.git
 cd  tp-tensorflow-detector-frutas.git
 ```
 ### ¿Cómo entrenar el modelo?
 
-1. Accede a la carpeta programaEntrenar`desde la terminar:
+1. Accede a la carpeta `programaEntrenar` desde la terminar:
 ```bash
 cd ./programaEntrenar
 ```
@@ -26,27 +25,27 @@ python traer.frutas.py
 ```bash
 start index.html
 ```
-4. Subí las imágenes desde el input (usa la opción "carpetas" si querés agrupar por clases).
+4. Subí la carpeta de imágenes desde el boton `Choose Files`.
+
+5. Por siguiente una vez cargada las imagenes, preciona el boton `Entrenar`
 
 #### Nota: 
-El código está configurado para que sean 3 imagenes por cada fruta. Podés cambiarlo en el archivo `traer-fruta.py`en la última función donde dice max_num
+El código está configurado para que sean 5 imagenes por cada fruta. Podés cambiarlo en el archivo `traer-fruta.py` en la última función donde dice `max_num=(cantidad)`
 
-3. Presioná el botón "Entrenar modelo".
-
-4. Una vez finalizado, el modelo se guardará automáticamente como archivos descargables:
+6. Una vez finalizado, el modelo se guardará automáticamente como archivos descargables:
    - `modelo-frutas.json`
    - `modelo-frutas.weights.bin`
 
-5. Copiá esos archivos a la carpeta `utilizarModelo`.
+7. Copiá esos archivos a la carpeta `utilizarModelo`.
 
-6. Colocarse en la carpeta `utilicarModelo`
+8. Colocarse en la carpeta `utilicarModelo`
 ```bash
 cd ..
 
 cd ./utilizarModelo
 ```
 
-7. Ejecutar 
+7. Ejecutar atravez del servidor local de Python o con LiveServer:
 ```
 python -m http.server
 
