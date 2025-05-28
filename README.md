@@ -1,10 +1,19 @@
 # Entrenamiento de modelo - Detector de Frutas
 
-Este proyecto utiliza TensorFlow.js para entrenar un modelo de clasificación de frutas. Se le dara los pasos de jeecucion desde 0 para que entrene y utilice el modelo.
+Este proyecto utiliza **TensorFlow.js** para entrenar y usar un modelo de clasificación de frutas. A continuación, se detallan los pasos para ejecutar el proyecto desde cero.
 
-## Requisitos
-- Instalar icrawler
+---
+
+##  Requisitos
+
+- Tener instalado **Python 3**
+- Instalar la librería [`icrawler`](https://pypi.org/project/icrawler/):
   
+```bash
+pip install icrawler
+```
+---
+
 ## Como clonar este repositorio
 1. Clonar el repositorio
 ```bash
